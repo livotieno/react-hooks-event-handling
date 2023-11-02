@@ -4,6 +4,7 @@ function Login() {
   function handleSubmit(event) {
     event.preventDefault();
     console.log("I submit");
+    event.target.reset();
   }
 
   return (
@@ -16,3 +17,9 @@ function Login() {
 }
 
 export default Login;
+
+// TODO: look into
+// React's event object is a special object called:
+// ! SyntheticBaseEvent
+
+// can event.preventDefault(), event.stopPropagation()
